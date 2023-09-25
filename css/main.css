@@ -1,0 +1,49 @@
+/* Clock styling */
+
+#clock-widget {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#clock-time {
+    color: #333;
+}
+
+/* Sticky Note styling */
+
+#sticky-note-widget {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#sticky-note {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#add-sticky-note {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#sticky-note-list {
+    list-style: none;
+    padding: 0;
+}
+
+.sticky-note-item {
+    background-color: #f7f7f7;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
