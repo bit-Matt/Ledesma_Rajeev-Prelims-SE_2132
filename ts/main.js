@@ -1,6 +1,7 @@
 "use strict";
-import { ClockWidget } from "./classes/ClockWidget.js";
-import { StickyNoteWidget } from "./classes/StickyNoteWidget.js";
-// Initialize both widgets
-const clock = new ClockWidget();
-const stickyNote = new StickyNoteWidget();
+Object.defineProperty(exports, "__esModule", { value: true });
+const ClockWidget_1 = require("./classes/ClockWidget");
+const StickyNoteWidget_1 = require("./classes/StickyNoteWidget");
+// Initialize widgets
+const clock = new ClockWidget_1.ClockWidget();
+const stickyNote = new StickyNoteWidget_1.StickyNoteWidget();
