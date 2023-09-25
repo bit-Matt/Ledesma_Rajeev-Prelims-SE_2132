@@ -1,5 +1,4 @@
 "use strict";
-
 export class StickyNoteWidget {
     constructor() {
         this.stickyNoteInput = document.getElementById('sticky-note');

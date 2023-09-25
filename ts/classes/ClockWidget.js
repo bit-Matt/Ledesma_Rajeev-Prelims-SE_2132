@@ -1,14 +1,18 @@
 "use strict";
-
 export class ClockWidget {
-    constructor() {
-        this.clockTimeElement = document.getElementById('clock-time');
-        setInterval(() => this.displayTime(), 1000);
+    constructor() { }
+    static getInstance() {
+        if (ClockWidget.instance === null) {
+            ClockWidget.instance = new ClockWidget();
+        }
+        return ClockWidget.instance;
     }
     displayTime() {
-        if (this.clockTimeElement) {
+        const clockTimeElement = document.getElementById('clock-time');
+        if (clockTimeElement) {
             const currentTime = new Date().toLocaleTimeString();
-            this.clockTimeElement.textContent = currentTime;
+            clockTimeElement.textContent = currentTime;
         }
     }
 }
+ClockWidget.instance = null;

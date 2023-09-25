@@ -1,15 +1,20 @@
 export class ClockWidget {
-    private clockTimeElement: HTMLElement | null;
-  
-    constructor() {
-      this.clockTimeElement = document.getElementById('clock-time');
-      setInterval(() => this.displayTime(), 1000);
-    }
-  
-    displayTime() {
-      if (this.clockTimeElement) {
-        const currentTime = new Date().toLocaleTimeString();
-        this.clockTimeElement.textContent = currentTime;
+  private static instance: ClockWidget | null = null;
+
+  private constructor() {}
+
+  public static getInstance(): ClockWidget {
+      if (ClockWidget.instance === null) {
+          ClockWidget.instance = new ClockWidget();
       }
-    }
+      return ClockWidget.instance;
+  }
+
+  public displayTime() {
+      const clockTimeElement = document.getElementById('clock-time');
+      if (clockTimeElement) {
+          const currentTime = new Date().toLocaleTimeString();
+          clockTimeElement.textContent = currentTime;
+      }
+  }
 }
