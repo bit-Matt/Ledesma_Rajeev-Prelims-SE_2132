@@ -12,7 +12,18 @@
         <button id="add-sticky-note">Add Sticky Note</button>
         <ul id="sticky-note-list"></ul>
     </div>
-    <script type="module" src="./ts/main.js"></script>
+   </div>
+        <h3>Color Picker</h3>
+            <div class="color-picker">
+              <div class="color-swatch" style="background-color: red;"></div>
+              <div class="color-swatch" style="background-color: blue;"></div>
+              <div class="color-swatch" style="background-color: green;"></div>
+              <div class="color-swatch" style="background-color: yellow;"></div>
+    </div>
+    <div id="selected-color"></div>
+    <div id="sticky-note-container"></div>
+        <script type="module" src="./ts/main.js"></script>
+        <script type="module" src="./ts/classes/ColorPickerWidget.js"></script>
 </body>
 </html>
 
